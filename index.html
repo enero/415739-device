@@ -5,25 +5,30 @@
     <title>HTML Academy: Девайс - Главная</title>
   </head>
   <body>
-    <header class="main-header">
-      <p class="header-logo">
-        <a>
-          <span class="site-logo site-logo-header">Device</span>
-        </a>
-      </p>
+    <header class="main-header" aria-label="Шапка сайта">
+      <a class="logo-link" aria-label="Логотип интернет-магазина Device">
+        <div class="logo-name logo-name-header">Device</div>
+      </a>
 
       <nav class="main-navigation">
         <div>
-          <span class="site-search">Поиск по сайту</span>
+          <form action="search.html" method="post" aria-label="Поиск по сайту">
+            <input type="text"
+                   name="search-text"
+                   id="search-input"
+                   placeholder="Поиск по сайту"
+                   aria-label="Поле для поиска по сайту">
+            <button type="submit">Найти</button>
+          </form>
 
-          <ul class="user-navigation">
+          <ul class="user-navigation" aria-label="Меню пользователя">
             <li class="login-link"><a href="login.html">Войти</a></li>
             <li class="compare-link"><a href="compare.html">Сравнить</a></li>
             <li class="cart-link"><a href="cart.html">Корзина</a></li>
           </ul>
         </div>
 
-        <ul class="site-navigation">
+        <ul class="site-navigation" aria-label="Меню сайта">
             <li>
               <a href="catalog.html">Каталог товаров</a>
               <ul class="product-catalog-menu">
@@ -48,19 +53,19 @@
               </ul>
             </li>
             <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="guaranty.html">Гарантия</a></li>
+            <li><a href="warrantly.html">Гарантия</a></li>
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container" aria-label="Основное содержание">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <!-- Основное содержимое -->
     </main>
 
     <div>
-      <section class="main-footer-about">
+      <section class="main-footer-about" aria-label="О нас">
         <h2 class="main-footer-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -70,66 +75,90 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <p>
-          <a href="#" class="button about-more">Подробнее о нас</a>
+          <a href="about-more.html" class="button about-more">Подробнее о нас</a>
         </p>
       </section>
-      <section class="main-footer-contacts">
+      <section class="main-footer-contacts" aria-label="Контакты">
         <h2 class="main-footer-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="map.html"><img src="img/map.jpg" width="560" height="222"></a>
+        <a href="map.html">
+          <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 1">
+        </a>
         <p>
-          <a href="#" class="button write-us">Напишите нам</a>
+          <a href="write-us.html" class="button write-us">Напишите нам</a>
         </p>
       </section>
     </div>
 
-    <footer class="main-footer">
-      <div>
-        <p class="footer-logo">
-          <a>
-            <span class="site-logo site-logo-footer">Device</span>
-          </a>
-        </p>
-        <p class="address">г. Москва, ул. Строителей, 15</p>
+    <footer class="main-footer" aria-label="Подвал сайта">
+      <div class="footer-logo">
+        <a class="logo-link" aria-label="Логотип интернет-магазина Device">
+          <div class="logo-name logo-name-footer">Device</div>
+        </a>
+        <address class="address" aria-label="Адрес">г. Москва, ул. Строителей, 15</address>
       </div>
       <div>
-        <ul class="footer-menu">
+        <ul class="footer-menu" aria-label="Меню сайта">
           <li class="footer-menu-item">
-            <a href="#">Доставка</a>
+            <a href="delivery.html">Доставка</a>
           </li>
           <li class="footer-menu-item">
-            <a href="#">Гарантия</a>
+            <a href="warrantly.html">Гарантия</a>
           </li>
           <li class="footer-menu-item">
-            <a href="#">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
 
-        <ul class="footer-social">
+        <ul class="footer-social" aria-label="Мы в социальных сетях">
           <li class="footer-social-item">
-            <a href="#">Facebook</a>
+            <a href="https://facebook.com/"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="footer-social-item">
-            <a href="#">Instagram</a>
+            <a href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li class="footer-social-item">
-            <a href="#">Twitter</a>
+            <a href="https://twitter.com"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
       </div>
       <div>
-        <ul class="user-navigation">
+        <ul class="user-navigation" aria-label="Меню пользователя">
           <li class="login-link"><a href="login.html">Войти</a></li>
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
-        <p class="phone"></p>
+        <p class="phone" aria-label="Телефон">+7(495)495-95-95</p>
         <p class="site-developer">
           <a href="https://htmlacademy.ru">
-            <img src="img/logo-html.svg" width="27" height="34" alt="Сайт HTML Academy">
+            <img src="img/logo-html.svg" width="26" height="34" alt="Сайт HTML Academy">
           </a>
         </p>
       </div>
     </footer>
+
+    <section class="modal modal-send-message" aria-label="Форма для отправки сообщения">
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+      <form action="send-message.html" method="post">
+        <div class="field-text">
+          <label for="sender-name">Ваше имя:</label>
+          <input type="text" name="sender-name" id="sender-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="field-text">
+          <label for="sender-email">Ваш e-mail:</label>
+          <input type="email" name="sender-email" id="sender-email" placeholder="email@example.com">
+        </div>
+        <div class="field-textarea">
+          <label for="sender-message">Текст письма:</label>
+          <textarea name="sender-message" id="sender-message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit" class="button-yellow">Отправить</button>
+      </form>
+    </section>
+
+    <section class="modal modal-map" aria-label="Адрес на карте">
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+      <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 1">
+    </section>
   </body>
 </html>
