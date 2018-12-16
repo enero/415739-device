@@ -35,6 +35,10 @@
 }
 
 body {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -47,11 +51,51 @@ a {
   text-decoration: none;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button-yellow {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #f0c52e;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-yellow:hover {
+  background-color: #f0c52e;
+}
+
+.button-yellow:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+/** шапка - начало **/
+
 .main-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-header-inner {
+  min-height: 150px;
+  padding: 70px 60px;
   background-color: #f7e296;
 }
 
 .logo-name {
+  display: block;
+  width: 164px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
   font-size: 48px;
@@ -59,20 +103,31 @@ a {
   text-transform: uppercase;
 }
 
-.logo-name-header {
-  color: #000000;
-}
-
-.logo-name-footer {
-  color: #ffc600;
-}
-
-.logo-name-footer:hover {
+.logo-name[href]:hover {
   opacity: 0.6;
 }
 
-.logo-name-footer:active {
+.logo-name[href]:active {
   opacity: 0.3;
+}
+
+.logo-name-black {
+  color: #000000;
+}
+
+.logo-name-yellow {
+  color: #ffc600;
+}
+
+.main-navigation-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  width: 440px;
+  height: 37px;
 }
 
 .search-input {
@@ -111,6 +166,9 @@ a {
 }
 
 .user-navigation {
+  width: 500px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -132,6 +190,9 @@ a {
 }
 
 .site-navigation {
+  width: 500px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -151,8 +212,30 @@ a {
   opacity: 0.3;
 }
 
+.site-navigation-item-catalog {
+  width: 440px;
+}
+
+.site-navigation-item-catalog a {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .category-menu {
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 622px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-menu-item {
+  padding-right: 40px;
 }
 
 .category-menu-item a {
@@ -171,7 +254,13 @@ a {
   opacity: 0.3;
 }
 
+/** шапка - конец **/
+
+
+/** основное соджержание - начало **/
+
 .page-title {
+  margin: 40px 60px 30px 60px;
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -181,6 +270,8 @@ a {
 
 .breadcrumb {
   list-style: none;
+  margin: 0 60px 30px 60px;
+  padding: 0;
 }
 
 .breadcrumb-item {
@@ -202,6 +293,31 @@ a {
   opacity: 0.1;
 }
 
+.site-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 340px;
+  padding: 30px 68px 30px 60px;
+  margin-right: 52px;
+  box-sizing: border-box;
+  background: #eeeeee;
+}
+
+.site-columns::before {
+  content: '';
+  flex: 1;
+  background: #eeeeee;
+}
+
+.site-columns::after {
+  content: '';
+  flex: 1;
+  background: #ffffff;
+}
+
 .filter-title {
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
@@ -212,6 +328,8 @@ a {
 
 .filter-option-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-input-label {
@@ -230,6 +348,26 @@ a {
   color: #a6a6a6;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 20px;
+}
+
+.catalog-item h3 {
+  order: 1;
+}
+
 .catalog-item-name {
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
@@ -246,15 +384,31 @@ a {
   color: #464646;
 }
 
-.main-footer-title {
+.company-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info-about {
+  width: 460px;
+  padding: 20px;
+}
+
+.company-info-contacts {
+  width: 560px;
+  padding: 20px;
+}
+
+.company-info-title {
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  margin: 45px 0;
 }
 
 .delivery-company-list {
-  list-style: none;
+  list-style: circle;
 }
 
 .delivery-company-list li {
@@ -263,25 +417,6 @@ a {
   font-size: 16px;
   line-height: 40px;
   color: #000000;
-}
-
-.button-yellow {
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: #f0c52e;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.button-yellow:hover {
-  background-color: #f0c52e;
-}
-
-.button-yellow:active {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
 }
 
 .catalog-item-add-compare {
@@ -301,7 +436,14 @@ a {
   opacity: 0.2;
 }
 
+/** основное содержание - конец **/
+
+
+/** подвал - начало **/
+
 .main-footer {
+  padding-top: 80px;
+  padding-bottom: 60px;
   background-color: #464646;
 }
 
@@ -311,7 +453,14 @@ a {
 }
 
 .footer-menu {
+  width: 440px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phone {
+  color: #ffffff;
 }
 
 .footer-menu-item a {
@@ -328,6 +477,11 @@ a {
 
 .footer-menu-item a:active {
   opacity: 0.3;
+}
+
+.main-footer-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer .user-navigation-link {
@@ -348,8 +502,16 @@ a {
   opacity: 0.3;
 }
 
+.footer-social {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer-social-item a {
   opacity: 0.3;
+  color: #ffffff;
 }
 
 .footer-social-item a:hover {
@@ -367,6 +529,8 @@ a {
 .site-developer a:active {
   opacity: 0.3;
 }
+
+/** подвал - конец **/
 
 
 
