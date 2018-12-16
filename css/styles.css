@@ -1,29 +1,42 @@
 @font-face {
-  font-family: 'Gilroy Extra Bold';
-  src: url('../font/gilroyextrabold.woff2') format('woff2'),
+  font-family: 'Gilroy';
+  src: local('Gilroy ExtraBold'),
+       local('Gilroy-ExtraBold'),
+       url('../font/gilroyextrabold.woff2') format('woff2'),
        url('../font/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Gilroy Light';
-  src: url('../font/gilroylight.woff2') format('woff2'),
-  url('../font/gilroylight.woff') format('woff');
+  font-family: 'Gilroy';
+  src: local('Gilroy Light'),
+       local('Gilroy-Light'),
+       url('../font/gilroylight.woff2') format('woff2'),
+       url('../font/gilroylight.woff') format('woff');
+  font-weight: 300;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../font/opensans.woff2') format('woff2'),
-  url('../font/opensans.woff') format('woff');
+  src: local('Open Sans'),
+       local('OpenSans'),
+       url('../font/opensans.woff2') format('woff2'),
+       url('../font/opensans.woff') format('woff');
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Open Sans Light';
-  src: url('../font/opensanslight.woff2') format('woff2'),
-  url('../font/opensanslight.woff') format('woff');
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'),
+       local('OpenSans-Light'),
+       url('../font/opensanslight.woff2') format('woff2'),
+       url('../font/opensanslight.woff') format('woff');
+  font-weight: 300;
 }
 
 body {
-  font-family: 'Open Sans Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   background-color: #ffffff;
@@ -39,7 +52,8 @@ a {
 }
 
 .logo-name {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
@@ -122,7 +136,8 @@ a {
 }
 
 .site-navigation-item a {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -141,7 +156,8 @@ a {
 }
 
 .category-menu-item a {
-  font-family: 'Open Sans Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 36px;
   color: #000000;
@@ -156,7 +172,8 @@ a {
 }
 
 .page-title {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -186,7 +203,8 @@ a {
 }
 
 .filter-title {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -213,21 +231,24 @@ a {
 }
 
 .catalog-item-name {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 
 .catalog-item-price {
-  font-family: 'Gilroy Extra Light', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   color: #464646;
 }
 
 .main-footer-title {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
 }
@@ -237,14 +258,16 @@ a {
 }
 
 .delivery-company-list li {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
 }
 
 .button-yellow {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   background-color: #f0c52e;
@@ -262,7 +285,8 @@ a {
 }
 
 .catalog-item-add-compare {
-  font-family: 'Open Sans Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: #000000;
@@ -291,7 +315,8 @@ a {
 }
 
 .footer-menu-item a {
-  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
