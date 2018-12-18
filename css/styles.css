@@ -52,7 +52,7 @@ a {
 }
 
 .page-container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -62,9 +62,10 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
   background-color: #f0c52e;
   color: #000000;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -201,6 +202,8 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -387,16 +390,16 @@ a {
 .company-info-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .company-info-about {
-  width: 460px;
-  padding: 20px;
+  width: 480px;
 }
 
 .company-info-contacts {
   width: 560px;
-  padding: 20px;
 }
 
 .company-info-title {
@@ -442,7 +445,7 @@ a {
 /** подвал - начало **/
 
 .main-footer {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #464646;
 }
@@ -468,6 +471,8 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
