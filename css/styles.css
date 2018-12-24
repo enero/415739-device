@@ -89,6 +89,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  border: 0;
   box-sizing: border-box;
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;
@@ -98,6 +99,7 @@ input[type="radio"].visually-hidden {
   text-indent: 3.6px;
   text-transform: uppercase;
   text-align: center;
+  background-color: transparent;
   color: #000000;
   cursor: pointer;
 }
