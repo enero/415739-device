@@ -7,30 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-
     <header class="main-header" aria-label="Шапка сайта">
       <div class="main-header-inner page-container">
         <a href="index.html"
-           class="logo-name logo-name-black"
+           class="logo-name logo-name-header logo-name-black"
            aria-label="Логотип интернет-магазина Device">Device</a>
 
         <nav class="main-navigation">
-          <div class="main-navigation-row">
+          <div class="main-navigation-row margin-bottom-1">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post" aria-label="Поиск по сайту">
               <input type="text"
                      name="search-text"
                      class="search-input"
                      id="search-input"
                      placeholder="Поиск по сайту"
+                     autocomplete="off"
                      aria-label="Поле для поиска по сайту">
               <button type="submit" class="search-submit">Найти</button>
             </form>
 
             <ul class="user-navigation" aria-label="Меню пользователя">
-              <li><a href="profile.html" class="user-navigation-link username-link">Валентин Петухов</a></li>
-              <li><a href="logout.html" class="user-navigation-link logout-link">Выйти</a></li>
-              <li><a href="compare.html" class="user-navigation-link compare-link">Сравнить</a></li>
-              <li><a href="cart.html" class="user-navigation-link cart-link">Корзина</a></li>
+              <li class="user-navigation-item user-navigation-item-user">
+                <a href="profile.html">Валентин Петухов</a>
+              </li>
+              <li class="user-navigation-item user-navigation-item-logout user-navigation-item-logout-black">
+                <a href="logout.html">Выйти</a>
+              </li>
+              <li class="user-navigation-item user-navigation-item-compare">
+                <a href="compare.html">Сравнить</a>
+              </li>
+              <li class="user-navigation-item user-navigation-item-cart">
+                <a href="cart.html">Корзина</a>
+              </li>
             </ul>
           </div>
 
@@ -39,26 +47,34 @@
               <a href="catalog.html">Каталог товаров</a>
             </div>
 
-            <ul class="category-menu">
-              <li class="category-menu-item">
-                <a href="category.html">Виртуальная реальность</a>
-              </li>
-              <li class="category-menu-item">
-                <a href="category.html">Моноподы для селфи</a>
-              </li>
-              <li class="category-menu-item">
-                <a href="category.html">Экшн-камеры</a>
-              </li>
-              <li class="category-menu-item">
-                <a href="category.html">Фитнес-браслеты</a>
-              </li>
-              <li class="category-menu-item">
-                <a href="category.html">Умные часы</a>
-              </li>
-              <li class="category-menu-item">
-                <a href="category.html">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="category-menu-wrapper">
+              <table class="category-menu">
+                <tr>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Виртуальная реальность</a>
+                  </td>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Фитнес-браслеты</a>
+                  </td>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Квадрокоптеры</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Моноподы для селфи</a>
+                  </td>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Умные часы</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="category.html" class="category-menu-link">Экшн-камеры</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
 
             <ul class="site-navigation" aria-label="Меню сайта">
               <li class="site-navigation-item">
@@ -72,7 +88,6 @@
               </li>
             </ul>
           </div>
-
         </nav>
       </div>
     </header>
@@ -164,10 +179,12 @@
 
               <p class="catalog-item-image">
                 <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <a href="https://echo.htmlacademy.ru/cart/add/1"
-                   class="button-yellow catalog-item-add-cart">В корзину</a>
-                <a href="https://echo.htmlacademy.ru/compare/add/1"
-                   class="catalog-item-add-compare">Добавить к сравнению</a>
+                <span class="catalog-item-actions">
+                  <a href="https://echo.htmlacademy.ru/cart/add/1"
+                     class="button-yellow catalog-item-add-cart">В корзину</a>
+                  <a href="https://echo.htmlacademy.ru/compare/add/1"
+                     class="catalog-item-add-compare">Добавить к сравнению</a>
+                </span>
               </p>
             </li>
             <li class="catalog-item">
@@ -178,10 +195,12 @@
 
               <p class="catalog-item-image">
                 <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-                <a href="https://echo.htmlacademy.ru/cart/add/2"
-                   class="button-yellow catalog-item-add-cart">В корзину</a>
-                <a href="https://echo.htmlacademy.ru/compare/add/2"
-                   class="catalog-item-add-compare">Добавить к сравнению</a>
+                <span class="catalog-item-actions">
+                  <a href="https://echo.htmlacademy.ru/cart/add/2"
+                     class="button-yellow catalog-item-add-cart">В корзину</a>
+                  <a href="https://echo.htmlacademy.ru/compare/add/2"
+                     class="catalog-item-add-compare">Добавить к сравнению</a>
+                </span>
               </p>
             </li>
             <li class="catalog-item">
@@ -192,10 +211,12 @@
 
               <p class="catalog-item-image">
                 <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <a href="https://echo.htmlacademy.ru/cart/add/3"
-                   class="button-yellow catalog-item-add-cart">В корзину</a>
-                <a href="https://echo.htmlacademy.ru/compare/add/3"
-                   class="catalog-item-add-compare">Добавить к сравнению</a>
+                <span class="catalog-item-actions">
+                  <a href="https://echo.htmlacademy.ru/cart/add/3"
+                     class="button-yellow catalog-item-add-cart">В корзину</a>
+                  <a href="https://echo.htmlacademy.ru/compare/add/3"
+                     class="catalog-item-add-compare">Добавить к сравнению</a>
+                </span>
               </p>
             </li>
             <li class="catalog-item">
@@ -206,11 +227,13 @@
 
               <p class="catalog-item-image">
                 <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <span class="badge-new">New</span>
-                <a href="https://echo.htmlacademy.ru/cart/add/4"
-                   class="button-yellow catalog-item-add-cart">В корзину</a>
-                <a href="https://echo.htmlacademy.ru/compare/add/4"
-                   class="catalog-item-add-compare">Добавить к сравнению</a>
+                <span class="catalog-item-actions">
+                  <a href="https://echo.htmlacademy.ru/cart/add/4"
+                     class="button-yellow catalog-item-add-cart">В корзину</a>
+                  <a href="https://echo.htmlacademy.ru/compare/add/4"
+                     class="catalog-item-add-compare">Добавить к сравнению</a>
+                </span>
+                <span class="catalog-item-badge-new">New</span>
               </p>
             </li>
           </ul>
@@ -219,60 +242,63 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" aria-label="Подвал сайта">
       <div class="page-container">
-        <div class="main-footer-row">
-          <a href="index.html"
-             class="logo-name logo-name-yellow"
-             aria-label="Логотип интернет-магазина Device">Device</a>
 
-          <ul class="user-navigation" aria-label="Меню пользователя">
-            <li><a href="profile.html" class="user-navigation-link username-link">Валентин Петухов</a></li>
-            <li><a href="logout.html" class="user-navigation-link logout-link">Выйти</a></li>
-            <li><a href="compare.html" class="user-navigation-link compare-link">Сравнить</a></li>
-            <li><a href="cart.html" class="user-navigation-link cart-link">Корзина</a></li>
-          </ul>
+        <a class="logo-name logo-name-yellow"
+           aria-label="Логотип интернет-магазина Device">Device</a>
+
+        <ul class="user-navigation" aria-label="Меню пользователя">
+          <li class="user-navigation-item user-navigation-item-user">
+            <a href="profile.html">Валентин Петухов</a>
+          </li>
+          <li class="user-navigation-item user-navigation-item-logout user-navigation-item-logout-black">
+            <a href="logout.html">Выйти</a>
+          </li>
+          <li class="user-navigation-item user-navigation-item-compare">
+            <a href="compare.html">Сравнить</a>
+          </li>
+          <li class="user-navigation-item user-navigation-item-cart">
+            <a href="cart.html">Корзина</a>
+          </li>
+        </ul>
+
+        <address class="address" aria-label="Адрес">г. Москва, ул. Строителей, 15</address>
+
+        <ul class="site-navigation site-navigation-footer" aria-label="Меню сайта">
+          <li class="site-navigation-item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="warrantly.html">Гарантия</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <span class="phone" aria-label="Телефон">Тел.: +7 (495) 495-95-95</span>
+
+        <div class="line"></div>
+
+        <ul class="footer-social" aria-label="Мы в социальных сетях">
+          <li class="footer-social-item footer-social-item-facebook">
+            <a href="https://facebook.com/"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="footer-social-item footer-social-item-instagram">
+            <a href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="footer-social-item footer-social-item-twitter">
+            <a href="https://twitter.com"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+
+        <div class="site-developer">
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-html.svg" width="26" height="34" alt="Сайт HTML Academy">
+          </a>
         </div>
 
-        <div class="main-footer-row">
-          <address class="address" aria-label="Адрес">г. Москва, ул. Строителей, 15</address>
-
-          <ul class="footer-menu" aria-label="Меню сайта">
-            <li class="footer-menu-item">
-              <a href="delivery.html">Доставка</a>
-            </li>
-            <li class="footer-menu-item">
-              <a href="warrantly.html">Гарантия</a>
-            </li>
-            <li class="footer-menu-item">
-              <a href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-
-          <p class="phone" aria-label="Телефон">+7(495)495-95-95</p>
-        </div>
-
-        <div class="main-footer-row">
-          <div></div>
-
-          <ul class="footer-social" aria-label="Мы в социальных сетях">
-            <li class="footer-social-item">
-              <a href="#"><span class="visually-hidden">Facebook</span></a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#"><span class="visually-hidden">Instagram</span></a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#"><span class="visually-hidden">Twitter</span></a>
-            </li>
-          </ul>
-
-          <p class="site-developer">
-            <a href="https://htmlacademy.ru">
-              <img src="img/logo-html.svg" width="26" height="34" alt="Сайт HTML Academy">
-            </a>
-          </p>
-        </div>
       </div>
     </footer>
   </body>
