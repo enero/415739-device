@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Главная</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
     <header class="page-header" aria-label="Шапка сайта">
@@ -290,39 +290,41 @@
       </ul>
 
       <div class="main-delivery">
-        <div class="main-delivery-inner page-container-center">
-          <ul class="main-delivery-menu reset-list">
-            <li>
-              <button class="main-delivery-menu-button button-yellow main-delivery-menu-button-selected">Доставка</button>
-            </li>
-            <li>
-              <button class="main-delivery-menu-button button-yellow">Гарантия</button>
-            </li>
-            <li>
-              <button class="main-delivery-menu-button button-yellow">Кредит</button>
-            </li>
-          </ul>
+        <div class="page-container-center">
+          <div class="main-delivery-inner ">
+            <ul class="main-delivery-menu reset-list">
+              <li>
+                <button class="main-delivery-menu-button button-yellow main-delivery-menu-button-selected">Доставка</button>
+              </li>
+              <li>
+                <button class="main-delivery-menu-button button-yellow">Гарантия</button>
+              </li>
+              <li>
+                <button class="main-delivery-menu-button button-yellow">Кредит</button>
+              </li>
+            </ul>
 
-          <div class="main-delivery-desc">
-            <div style="display: block;">
-              <h2 class="large-title main-delivery-title">Доставка</h2>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </div>
-            <div style="display: none;">
-              <h2 class="large-title main-delivery-title">Гарантия</h2>
-              <p>
-                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-            </div>
-            <div style="display: none;">
-              <h2 class="large-title main-delivery-title">Кредит</h2>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
+            <div class="main-delivery-desc">
+              <div style="display: block;">
+                <h2 class="large-title main-delivery-title">Доставка</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+              <div style="display: none;">
+                <h2 class="large-title main-delivery-title">Гарантия</h2>
+                <p>
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
+              <div style="display: none;">
+                <h2 class="large-title main-delivery-title">Кредит</h2>
+                <p>
+                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -471,9 +473,10 @@
 
     <section class="modal modal-map" id="js-modal-map" aria-label="Адрес на карте">
       <button type="button" class="modal-close js-modal-close"><span class="visually-hidden">Закрыть</span></button>
-      <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 1">
+      <span class="visually-hidden">"г. Москва, ул. Строителей, 1</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947367!2d37.52742931575671!3d55.6870340045302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1548109523272" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
